@@ -1,5 +1,6 @@
+//Part 1: Thinking Functionally
 //Take an array of numbers and return the sum
-let numbers = [1, 2, 3];
+//let numbers = [1, 2, 3];
 function sum(numbers) {
     let total = 0;
     for (let number of numbers) { // lets you loop the array
@@ -21,3 +22,16 @@ function average(avg){
 
 }
 console.log(average(avg))
+
+// Take an array of strings and return the longest string
+let str = ["build", "chicken", "dog"]
+function longeststring(str) {
+    let longest = "";
+    for(let string of str){
+        if(string.length > longest.length) {
+            longest = string;
+        }
+    }
+    return longest
+}
+console.log(longeststring(str))
